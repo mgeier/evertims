@@ -83,9 +83,6 @@ public:
     float getArea (void) const;
     AABB getAABB (void) const;
     
-    void triangulate (std::vector<Polygon>& triangles);
-    void splitConvex (std::vector<Polygon>& polygons);
-    
     enum ClipResult
     {
         CLIP_CLIPPED,

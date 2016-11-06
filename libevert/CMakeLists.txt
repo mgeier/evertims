@@ -16,10 +16,6 @@ set (EVERT_SOURCES
     src/elBeam.cc
     )
 
-find_package(OpenGL REQUIRED)
-include_directories(${OPENGL_INCLUDE_DIR})
-link_libraries(${OPENGL_LIBRARIES})
-
 add_library (${PROJECT} SHARED ${EVERT_SOURCES})
 
 add_definitions ("-D__${CMAKE_SYSTEM_NAME}")
